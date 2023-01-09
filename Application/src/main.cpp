@@ -4,7 +4,12 @@
 
 int main()
 {
-	Core::PrintMessage("Hello World!");
+	Core::Log::Init();
+
+	APP_INFO("Console Application");
+
+	int t = 5;
+	APP_TRACE("t = {0}", t);
 
 	std::cin.get();
 }
