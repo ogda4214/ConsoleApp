@@ -86,6 +86,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Core\Assert.h" />
     <ClInclude Include="src\Core\BaseDefine.h" />
     <ClInclude Include="src\Header.h" />
     <ClInclude Include="src\Core\Log.h" />
