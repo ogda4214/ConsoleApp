@@ -19,16 +19,12 @@
       <Filter>Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Header.h" />
-    <ClInclude Include="src\Message\PrintMessage.h">
-      <Filter>Message</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Core\Serializer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Core\Log.cpp">
       <Filter>Core</Filter>
     </ClCompile>
-    <ClCompile Include="src\Message\PrintMessage.cpp">
-      <Filter>Message</Filter>
-    </ClCompile>
+    <ClCompile Include="src\Core\Serializer.cpp" />
   </ItemGroup>
 </Project>

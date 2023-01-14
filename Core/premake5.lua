@@ -22,16 +22,19 @@ project "Core"
    includedirs
    {
 		"src",
-		"vendor/spdlog/include"
+		"vendor/spdlog/include",
+		"%{IncludeDir.yaml_cpp}",
    }
 
    links
    {
+		"yaml-cpp",
 		"opengl32.lib"
    }
 
    filter "system:windows"
 		systemversion "latest"
+		staticruntime "on"
 
    filter "configurations:Debug"
 		runtime "Debug"

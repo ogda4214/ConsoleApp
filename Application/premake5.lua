@@ -16,8 +16,9 @@ project "Application"
 	
    includedirs
    {
+		"%{wks.location}/Core/src",
    		"%{wks.location}/Core/vendor/spdlog/include",
-		"%{wks.location}/Core/src"
+		"%{wks.location}/Core/vendor"
    }
 
    links
@@ -27,6 +28,7 @@ project "Application"
 
    filter "system:windows"
 		systemversion "latest"
+		staticruntime "on"
 
    filter "configurations:Debug"
 		runtime "Debug"
